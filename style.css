@@ -1,0 +1,514 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family:'gilroy',sans-serif;
+    scroll-behavior: smooth;
+}
+html, body{
+     height: 100%;
+     width: 100%;
+}
+#main{
+    position: relative;
+    /* pages do not overlap */
+    overflow: hidden;
+/* extra things which come out get hide itself */
+
+}
+#page{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: black;
+}
+
+
+#page>span>img{
+    width: 34%;
+    position: absolute;
+    top: 51%;
+    right: 5%;
+    transform:translateY(-50%) ;
+    transition: all ease 0.9s;
+}
+
+#page>span>img{
+    border-radius:49%;
+    border: solid 6px crimson;
+    
+}
+
+#page>span>img:hover{
+    scale: 1.07;
+
+}
+#page>#nav{
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+
+#nav img{
+    width: 3.5%;
+    height: 60%;
+    border-radius:20%;
+    transition: all ease 0.9s;
+
+}
+#nav img:hover{
+    scale: 1.15;
+}
+
+#nav_center{
+    display: flex;
+    gap: 59px;
+}
+
+#nav_center a{    
+    color:white;
+    font-weight: 500;
+    font-size: 17px;
+    text-decoration: none;
+    
+}
+
+#nav_center a:hover{
+   color: #14CF93;
+
+
+}
+#nav_center a.active{
+    color: #14CF93;
+}
+
+.btn{ 
+    text-decoration: none;
+    border-radius:500px ;
+    padding: 15px 25px;
+    border:2px solid rgb(20, 207, 147);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    background-size: 150% 100%;
+    background: rgb(20, 207, 147);
+    transition: all .3s ease-in-out;
+    margin-right: 40px;
+}
+.btn:hover{
+    background: transparent;
+    border-color: #14CF93;    
+}
+
+ #text{
+    position: relative;
+    height: 85%;
+    width: 40%;
+    top: 9%;
+    left: 5%;
+    padding: 30px 48px;
+}
+
+/* COMBINING COMBINERS WAY OF SELECTING */
+h1 span.color{
+    font-family:poppins;
+    color:white;
+    font-weight: 1000;
+ }
+
+ #text h1{
+    color: #3f5692;
+    font-size: 45px;
+    line-height: 1.11;
+ }
+
+#text h3,h4{
+    margin-top: 5px;
+    font-size: 16.5px;
+    font-weight: 600;
+    color: white;
+ }
+ 
+ 
+.resume{
+    position:absolute;
+    margin-top: 2.4rem;
+    margin-left: 19rem;
+
+}
+
+#page1{
+    height: 100vh;
+    width: 100vw;
+    background-color:black;
+    position: relative;
+}
+
+#page1>#right{
+    position: absolute;
+    height: 80%;
+    width: 35%;
+    right: 5%;
+    top: 18%;
+    transform: translateY(-10%);
+}
+
+#right>.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    height: 25%;
+    width: 100%;
+    border-top: 2px solid #14CF93;
+}
+
+#right>.box h4{
+    font-size: 21px;
+margin-top: 0.7%;
+}
+
+#right>.box h2{
+    font-size: 29px;
+    padding: 0px 10px;
+}
+
+.box h2{
+    color: white;
+}
+
+.circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    width: 5vh;
+    background-color: #14CF93;
+    border-radius: 50%;
+    text-decoration: none;
+    border:2px solid rgb(20, 207, 147);
+    transition: all .3s ease-in-out;
+   }
+
+.circle:hover{
+    background: transparent;
+    border-color: #14CF93;    
+}
+
+.circle>i{
+    color: white;
+    font-size: 25px;
+}    
+
+#left>#png>img{
+    position: absolute;
+    height: 70%;
+    width: 35%;
+    top: 4%;
+    left: 10%;
+    padding: 26px 26px;
+    transition: all ease 1s;
+}
+
+#png>img:hover{
+    scale: 1.06;
+}
+
+#skills{
+    position: absolute;
+    height: 24%;
+    width: 35%;
+    bottom: 6%;
+    left: 7%;
+}
+
+#skills>h2{
+    color: white;
+    font-size: 32px;
+
+}
+
+#skills .circle1{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    text-decoration: none;
+    color: #14CF93;
+    padding: 0px 40px;
+}
+
+#skills .circle1>i{
+   
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border-radius: 50%;
+    height: 6vh;
+    width: 6vh;
+    border: 0px;
+    font-size: 42px;
+    margin-top: 4%;
+   } 
+
+#skills .circle1>.icon{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    margin-top: 31%;
+    margin-left: 20.7%;
+    text-decoration: none;
+    color: #14CF93;
+    padding: 3px 40px;
+    width: 100%;
+    }
+
+#skills .circle1>.icon>i{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    border-radius: 50%;
+    height: 6vh;
+    width: 6vh;
+    border: 0px;
+    font-size: 42px;
+    margin-top: 3%;
+  }    
+
+  #page2{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color:black;
+
+}
+#project{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50%;
+    width: 90%;
+    left: 50%;
+    bottom: 5%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+.projects{
+    height: 98%;
+    width: 31%;
+    border-top: 2px solid #14CF93;
+
+    
+}
+#text2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 27px;
+    height: 30%;
+    color: white;
+    font-size: 19PX;
+
+}
+#image{
+    height: 70%;
+    width: 100%;
+  
+
+}
+#image>img{
+    height: 92%;
+    width: 100%;
+    border: 2px solid #14CF93;
+    transition: all ease 0.7s;
+}
+
+#image img:hover{
+    scale:1.07;
+    
+}
+
+.p2{
+    position: relative;
+    top: -30%;
+
+}
+.p3{
+    position: relative;
+    top: -55%;
+
+}
+#text4{
+    height: 20%;
+    width: 30%;
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+
+}
+#text4>h1{
+    font-size: 50px;
+    margin-top: 20px;
+}
+#text4>h5{
+    color: #14CF93;
+    position: absolute;
+    transform: rotate(-20deg);
+    top: 0%;
+    right: 90%;
+
+}
+#page3{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+#text5{
+    position: relative;
+    height: 50%;
+    width: 100%;
+    color: white;
+    top: 3%;
+    padding: 16px 500px;
+    
+}
+#text5>#t1{
+    height: 70%;
+    width: 100%;
+    font-size: 30px;
+   margin-top: 2%;
+   
+}
+
+#t1>h1>.t5-1{
+    position: absolute;
+    left:40%;
+    font-weight: 400;
+}
+
+#t1>h1>.t5-3{
+    position: absolute;
+    left:35.5%;
+    font-weight: 400;
+}
+
+#t1>h1>.t5-2{
+    position: absolute;
+    left: 34%;
+    font-weight: 400;
+}
+#btn{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 55%;
+    width: 85%; 
+    top: 60%;
+    left: 8%;
+    }
+    
+#btn>a{
+    text-transform:unset;
+    font-size: 22px;
+    height: 37%;
+    width: 100%;
+    padding: 25px 195px;
+    background-color: transparent;
+    font-weight: 500;
+}
+
+#btn>a:hover{
+    background: #14CF93;
+}
+#contact{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    right: 10px;
+    top: 13%;
+    height: 13%;
+
+}
+
+#contact>.box1{
+    color: white;
+    height: 100%;
+    width: 18%;
+    border-top: 2px solid #14CF93;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+.box1>.logo_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 10px;
+}
+.box1>.logo_content>p{
+    font-size: 30px;
+    font-weight: 500;
+}
+.box1>p{
+    margin-top: 10%;
+    width: 100%;
+    font-size: 15px;
+    margin-left: 11%;
+    font-weight: 500;
+}
+#footer{
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    top: 90%;
+}
+#footer>#f1{
+    position: absolute;
+    height: 100%;
+    width: 26%;
+    left: 40px;
+}
+#footer>#f2{
+    position: absolute;
+    height: 100%;
+    width: 25%;
+    right: 40px;
+}
+
+#f1>p{
+    color: white;
+    font-weight: 100;
+    padding: 20px 20px;
+    font-size: 15px;
+}
+#f2>p{
+    color: white;
+    font-weight: 100;
+    padding: 20px 20px;
+    font-size: 15px;
+    margin-left: 61%;
+}
+
+#f2>p>i{
+    color: #14CF93;
+}
+
+#nav>.circle{
+    background-color: transparent;
+    border: none;
+    
+}
+.nav-toggle{
+    display: none;
+}
